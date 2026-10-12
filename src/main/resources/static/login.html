@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="auth-page">
+
+<header class="header">
+
+    <a href="index.html" class="logo">
+        🛒 <span>Shop</span>Easy
+    </a>
+
+    <nav>
+
+        <a href="index.html">
+            ← Back to Home
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="auth-container">
+
+    <div class="auth-card">
+
+        <div class="auth-left">
+
+            <div class="auth-brand">
+                🛒
+            </div>
+
+            <h1>Welcome to ShopEasy</h1>
+
+            <p>
+                Login to manage your orders,
+                wishlist and rewards.
+            </p>
+
+            <div class="auth-benefits">
+
+                <p>✓ Easy shopping</p>
+                <p>✓ Track your orders</p>
+                <p>✓ Earn loyalty points</p>
+                <p>✓ Get monthly offers</p>
+                <p style="margin-top: 12px; font-weight: 600; color: #3b82f6;">💡 Demo: demo@shopeasy.com / password123</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="auth-right">
+
+            <div class="auth-tabs">
+
+                <button id="loginTab"
+                        class="auth-tab active">
+                    Login
+                </button>
+
+                <button id="signupTab"
+                        class="auth-tab">
+                    Create Account
+                </button>
+
+            </div>
+
+
+            <div id="authMessage" class="auth-message">
+            </div>
+
+
+            <!-- LOGIN -->
+
+            <form id="loginForm" class="auth-form">
+
+                <h2>Login</h2>
+
+                <p class="form-subtitle">
+                    Enter your account details
+                </p>
+
+
+                <label for="loginEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+
+                <button type="submit" class="btn full-btn">
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- SIGNUP -->
+
+            <form id="signupForm" class="auth-form hidden">
+
+                <h2>Create Account</h2>
+
+                <p class="form-subtitle">
+                    Join ShopEasy today
+                </p>
+
+
+                <label for="signupName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="signupName"
+                    placeholder="Enter your name"
+                    required
+                >
+
+
+                <label for="signupEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="signupEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="signupPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="signupPassword"
+                    placeholder="Minimum 6 characters"
+                    minlength="6"
+                    required
+                >
+
+
+                <button type="submit"
+                        class="btn full-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

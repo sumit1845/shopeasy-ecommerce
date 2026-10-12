@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy - Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        🛒 <span>Shop</span>Easy
+    </div>
+
+    <nav>
+
+        <a href="products.html">
+            ← Continue Shopping
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="section">
+
+    <div class="page-title">
+
+        <span>CHECKOUT</span>
+
+        <h1>Complete Your Order 💳</h1>
+
+    </div>
+
+
+    <div id="checkout-summary"
+        class="checkout-summary">
+    </div>
+
+
+    <div class="checkout-grid">
+
+        <div class="form-container">
+
+            <h2>Delivery Information</h2>
+
+            <form id="checkoutForm">
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    required
+                >
+
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="customerEmail"
+                    required
+                >
+
+
+                <label>Address</label>
+
+                <textarea
+                    id="address"
+                    required
+                ></textarea>
+
+
+                <label>City</label>
+
+                <input
+                    type="text"
+                    id="city"
+                    required
+                >
+
+
+                <label>Pincode</label>
+
+                <input
+                    type="text"
+                    id="pincode"
+                    pattern="[0-9]{6}"
+                    maxlength="6"
+                    required
+                >
+
+
+                <label>Payment Method</label>
+
+                <select id="paymentMethod"
+                        required>
+
+                    <option value="">
+                        Select Payment Method
+                    </option>
+
+                    <option value="COD">
+                        Cash on Delivery
+                    </option>
+
+                    <option value="UPI">
+                        UPI
+                    </option>
+
+                    <option value="Card">
+                        Credit / Debit Card
+                    </option>
+
+                </select>
+
+
+                <button type="submit"
+                        class="btn full-btn">
+                    Place Order
+                </button>
+
+            </form>
+
+            <p id="checkoutMessage"></p>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

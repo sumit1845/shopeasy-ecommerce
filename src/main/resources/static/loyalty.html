@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy - Loyalty</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        🛒 <span>Shop</span>Easy
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">🛒 Cart</a>
+        <a href="orders.html">📦 Orders</a>
+        <a href="account.html">👤 Account</a>
+
+    </nav>
+
+</header>
+
+
+<main class="section">
+
+    <div class="page-title">
+
+        <span>REWARDS PROGRAM</span>
+
+        <h1>ShopEasy Loyalty ⭐</h1>
+
+    </div>
+
+
+    <div class="loyalty-dashboard">
+
+        <div class="loyalty-main">
+
+            <span>Your Points</span>
+
+            <h1 id="loyaltyPoints">
+                0
+            </h1>
+
+            <p>
+                Keep shopping to earn more points!
+            </p>
+
+        </div>
+
+
+        <div class="loyalty-stats">
+
+            <div>
+                <span>Membership</span>
+                <strong id="membershipTier">
+                    Bronze
+                </strong>
+            </div>
+
+            <div>
+                <span>Total Purchases</span>
+                <strong id="purchaseCount">
+                    0
+                </strong>
+            </div>
+
+            <div>
+                <span>This Month</span>
+                <strong id="monthlyPurchaseCount">
+                    0
+                </strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="reward-box">
+
+        <h2>🎁 Rewards</h2>
+
+        <p>
+            Redeem 100 points to receive a 10% reward discount.
+        </p>
+
+        <button id="redeemBtn"
+                class="btn">
+            Redeem 100 Points
+        </button>
+
+        <p id="rewardMessage"></p>
+
+    </div>
+
+
+    <div id="monthlyRewardStatus" class="monthly-offer">
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy - Products</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        🛒 <span>Shop</span>Easy
+    </div>
+
+    <button id="menuBtn" class="menu-btn">☰</button>
+
+    <nav id="navbar">
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html" class="active">
+            Products
+        </a>
+
+        <a href="wishlist.html">
+            ❤️ Wishlist
+        </a>
+
+        <a href="loyalty.html">
+            ⭐ Loyalty
+        </a>
+
+        <a href="cart.html">
+            🛒 Cart
+            <span id="cartCount">0</span>
+        </a>
+
+        <a href="orders.html">
+            📦 Orders
+        </a>
+
+        <a href="account.html">
+            👤 Account
+        </a>
+
+        <button id="darkModeBtn"
+                class="dark-btn">
+            🌙
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main class="section">
+
+    <div class="page-title">
+
+        <span>SHOPPING</span>
+
+        <h1>Discover Products 🛍️</h1>
+
+        <p>
+            Explore hundreds of products available on ShopEasy.
+        </p>
+
+    </div>
+
+
+    <!-- PRODUCT COUNT -->
+
+    <div class="product-count-box">
+
+        <strong id="productCount">
+            Loading products...
+        </strong>
+
+    </div>
+
+
+    <!-- SEARCH / SORT -->
+
+    <div class="product-controls">
+
+        <div class="search-box">
+
+            🔍
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search from 400+ products..."
+            >
+
+        </div>
+
+
+        <select id="sortSelect">
+
+            <option value="">
+                Sort Products
+            </option>
+
+            <option value="low">
+                Price: Low to High
+            </option>
+
+            <option value="high">
+                Price: High to Low
+            </option>
+
+            <option value="rating">
+                Highest Rated
+            </option>
+
+            <option value="name">
+                Name A-Z
+            </option>
+
+        </select>
+
+
+        <button id="randomBtn"
+                class="btn">
+
+            🎲 Random Products
+
+        </button>
+
+    </div>
+
+
+    <!-- CATEGORIES -->
+
+    <div class="categories">
+
+        <button class="category-btn active"
+                data-category="all">
+            All Products
+        </button>
+
+        <button class="category-btn"
+                data-category="smartphones">
+            📱 Smartphones
+        </button>
+
+        <button class="category-btn"
+                data-category="laptops">
+            💻 Laptops
+        </button>
+
+        <button class="category-btn"
+                data-category="tablets">
+            📲 Tablets
+        </button>
+
+        <button class="category-btn"
+                data-category="mens-shirts">
+            👕 Men's Shirts
+        </button>
+
+        <button class="category-btn"
+                data-category="womens-dresses">
+            👗 Women's Dresses
+        </button>
+
+        <button class="category-btn"
+                data-category="mens-shoes">
+            👟 Men's Shoes
+        </button>
+
+        <button class="category-btn"
+                data-category="womens-shoes">
+            👠 Women's Shoes
+        </button>
+
+        <button class="category-btn"
+                data-category="fragrances">
+            🌸 Fragrances
+        </button>
+
+        <button class="category-btn"
+                data-category="skincare">
+            🧴 Skincare
+        </button>
+
+        <button class="category-btn"
+                data-category="groceries">
+            🛒 Groceries
+        </button>
+
+        <button class="category-btn"
+                data-category="home-decoration">
+            🏠 Home
+        </button>
+
+    </div>
+
+
+    <!-- MONTHLY OFFER -->
+
+    <div id="monthlyOffer" class="monthly-offer">
+    </div>
+
+
+    <!-- LOADING -->
+
+    <p id="loading" class="loading">
+
+        Loading 400+ products...
+
+    </p>
+
+
+    <!-- PRODUCTS -->
+
+    <div id="products-container" class="product-grid">
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 ShopEasy
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEasy - Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        🛒 <span>Shop</span>Easy
+    </div>
+
+    <button id="menuBtn" class="menu-btn">☰</button>
+
+    <nav id="navbar">
+
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="wishlist.html">❤️ Wishlist</a>
+        <a href="loyalty.html">⭐ Loyalty</a>
+        <a href="cart.html" class="active">
+            🛒 Cart <span id="cartCount">0</span>
+        </a>
+        <a href="orders.html">📦 Orders</a>
+        <a href="account.html">👤 Account</a>
+
+    </nav>
+
+</header>
+
+
+<main class="section">
+
+    <div class="page-title">
+
+        <span>SHOPPING CART</span>
+
+        <h1>Your Cart 🛒</h1>
+
+    </div>
+
+
+    <div class="cart-layout">
+
+        <div>
+
+            <div id="cart-container"></div>
+
+        </div>
+
+
+        <aside class="cart-summary">
+
+            <h2>Price Details</h2>
+
+            <div id="cart-total">
+                Loading...
+            </div>
+
+
+            <div class="coupon-box">
+
+                <h3>Coupon</h3>
+
+                <input
+                    type="text"
+                    id="couponInput"
+                    placeholder="SAVE10 / SAVE20"
+                >
+
+                <button id="couponBtn"
+                        class="btn">
+                    Apply
+                </button>
+
+                <p id="couponMessage"></p>
+
+            </div>
+
+
+            <a href="checkout.html" class="btn full-btn">
+                Proceed to Checkout
+            </a>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
